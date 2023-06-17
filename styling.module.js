@@ -182,3 +182,26 @@ export function space(passedChild, withClass){
     }
 }
 
+//new ones
+export function width(passedChild){
+    for (const ch in passedChild.children) {
+        if (Object.hasOwnProperty.call(passedChild.children, ch)) {
+            const child = passedChild.children[ch];
+            let clalis = child.classList;
+            console.log(child)
+            clalis.forEach(cl => {
+            if(cl.includes('width-')){
+                let fontSizeSpl = cl.split('-')
+                let num = fontSizeSpl[fontSizeSpl.length-fontSizeSpl.length+1]
+                let type;
+                // if(fontSizeSpl.length )
+                // fontSizeSpl[fontSizeSpl.length-1]
+                console.log(fontSizeSpl.length)
+                
+                child.style.paddingRight = `${num}${type}`
+            }
+            });
+            paddingRight(child)  
+        }
+    }
+}

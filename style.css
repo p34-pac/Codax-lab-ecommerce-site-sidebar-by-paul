@@ -6,6 +6,7 @@ svg{
 }
 
 
+
 .prod-list{
     width: 100%;
     background-color: rgb(238,238,238);
@@ -227,6 +228,35 @@ input[type=range]{
     border-radius: 5px;
     background-color: #1b53c0;
   }
+  #filterPrice{
+    width: 50%;
+    background-color: #636a6d;
+    border: 1px solid black;
+    color: #2e2d2d;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    stroke: none;
+  }
+  #filterPrice:active{
+    outline: none;
+    transform: scale(0.98);
+    transition: transform 1s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+  }
+  #filterPrice:hover{
+    background-color: #3c4d55;
+    border: 1px solid rgb(68, 68, 68);
+    color: #979696;
+
+  }
+  .flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
   
 
   /* product list */
